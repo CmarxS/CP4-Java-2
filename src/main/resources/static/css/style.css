@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Distribui o conteúdo (topo e fundo) */
+    align-items: center;  /* Alinha horizontalmente o conteúdo */
+    height: 100vh;  /* Ocupa 100% da altura da tela */
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #00ff00; /* Verde */
+}
+
+/* Tabelas */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #444; /* Cor de fundo escura para a tabela */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #555; /* Borda mais clara */
+}
+
+th {
+    background-color: #00ff00; /* Cor verde para os cabeçalhos */
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #555; /* Cor de fundo para as linhas pares */
+}
+
+tr:hover {
+    background-color: #666; /* Cor de fundo ao passar o mouse */
+}
+
+/* Formulários */
+form {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #444; /* Fundo escuro */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #00ff00; /* Verde */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #00cc00; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Centralizar o botão "Novo Brinquedo" */
+.new-brinquedo-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #00ff00;
+    color: black;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.new-brinquedo-button:hover {
+    background-color: #00cc00;
+}
+
+/* Links */
+a {
+    color: #00ff00; /* Verde */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
